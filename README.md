@@ -28,7 +28,7 @@ Third line is the generated answer. If some words are not in directory, then the
 
 Results shown as follow:
 
-![QQ图片20210920163555](C:\Users\dell\Desktop\picture.png)
+![picture](.\picture.png)
 
 ### Shortage
 
