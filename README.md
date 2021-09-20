@@ -28,7 +28,7 @@ Third line is the generated answer. If some words are not in directory, then the
 
 Results shown as follow:
 
-![picture](.\picture.png)
+![picture](./picture.png)
 
 ### Shortage
 
