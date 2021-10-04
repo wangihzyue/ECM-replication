@@ -6,7 +6,7 @@ python 3.8.1, torch 1.8.1, jieba 0.42.1
 
 ### Introduction
 
-Replicate Emotion Classifier with LSTM and Emotional Conversation Generation with Emotional Embedding and Internal Memory (not realize external memory). For classifier, use BiLSTM to train for emotional classifier following the essay *Emotional Chatting Machine: Emotional Conversation Generation with Internal and External Memory*.<sup>[2]</sup>. Concat first time stamp output and last time stamp output from BiLSTM and use linear layer to produce a 6 dimensions vector to conduct the classification of emotion with 0.001 learning rate and 50 epoches. But the classification of LSTM can only reach about 0.48. For encoder-decoder and attention mechanism, I follow the realization in Pytorch official website<sup>[1]</sup>. Then, add emotion embedding and internal memory with write gate and read gate for emotional chatting machine following the essay of *Emotional Chatting Machine: Emotional Conversation Generation with Internal and External Memory*.<sup>[2]</sup>
+Replicate Emotion Classifier with LSTM and Emotional Conversation Generation with Emotional Embedding and Internal Memory (not realize external memory). For classifier, use BiLSTM to train for emotional classifier following the essay *Emotional Chatting Machine: Emotional Conversation Generation with Internal and External Memory*.<sup>[1]</sup>. Concat first time stamp output and last time stamp output from BiLSTM and use linear layer to produce a 6 dimensions vector to conduct the classification of emotion with 0.001 learning rate and 50 epoches. But the classification of LSTM can only reach about 0.48. For encoder-decoder and attention mechanism, I follow the realization in Pytorch official website<sup>[2]</sup>. Then, add emotion embedding and internal memory with write gate and read gate for emotional chatting machine following the essay of *Emotional Chatting Machine: Emotional Conversation Generation with Internal and External Memory*.<sup>[1]</sup>
 
 The dataset I use is the *stc-3_emotion_train.json*.
 
@@ -38,6 +38,6 @@ Results shown as follow:
 
 ### Reference
 
-[1] [NLP From Scratch: Translation with a Sequence to Sequence Network and Attention — PyTorch Tutorials 1.9.0+cu102 documentation](https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html)
+[1] [[1704.01074\] Emotional Chatting Machine: Emotional Conversation Generation with Internal and External Memory (arxiv.org)](https://arxiv.org/abs/1704.01074)
 
-[2] [[1704.01074\] Emotional Chatting Machine: Emotional Conversation Generation with Internal and External Memory (arxiv.org)](https://arxiv.org/abs/1704.01074)
+[2] [NLP From Scratch: Translation with a Sequence to Sequence Network and Attention — PyTorch Tutorials 1.9.0+cu102 documentation](https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html)
