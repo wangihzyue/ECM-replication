@@ -35,7 +35,7 @@ def prepareData():
     with open('stc-3_emotion_train.json', encoding='utf-8') as f:
         fileJson = json.load(f)
         cntt = 0;   # train dataset size
-        punctuation = r''   # punctuation filter
+        punctuation = r"""!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~“”？，！【】（）、。：；’‘……￥·"""   # punctuation filter
         for i in fileJson:
             cntt += 1
             if cntt == 300:
