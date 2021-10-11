@@ -1,4 +1,4 @@
-# ECM-replication
+# ECM-implementation
 
 ### Requirement
 
@@ -6,7 +6,7 @@ python 3.8.1, torch 1.8.1, jieba 0.42.1
 
 ### Introduction
 
-Replicate Emotion Classifier with LSTM and Emotional Conversation Generation with Emotional Embedding and Internal Memory (not realize external memory). For classifier, use BiLSTM to train for emotional classifier following the essay *Emotional Chatting Machine: Emotional Conversation Generation with Internal and External Memory*.<sup>[1]</sup>. Concat first time stamp output and last time stamp output from BiLSTM and use linear layer to produce a 6 dimensions vector to conduct the classification of emotion with 0.001 learning rate and 50 epoches. But the classification of LSTM can only reach about 0.48. For encoder-decoder and attention mechanism, I follow the realization in Pytorch official website<sup>[2]</sup>. Then, add emotion embedding and internal memory with write gate and read gate for emotional chatting machine following the essay of *Emotional Chatting Machine: Emotional Conversation Generation with Internal and External Memory*.<sup>[1]</sup>
+Implement Emotion Classifier with LSTM and Emotional Conversation Generation with Emotional Embedding and Internal Memory (not realize external memory). For classifier, use BiLSTM to train for emotional classifier. Concat first time stamp output and last time stamp output from BiLSTM and use linear layer to produce a 6 dimensions vector to conduct the classification of emotion with 0.001 learning rate and 50 epoches. But the classification of LSTM can only reach about 0.48. Create the conversation machine based on encoder-decoder framework and attention mechanism. Then, implement emotion embedding module and internal memory module for emotional chatting machine.
 
 The dataset I use is the *stc-3_emotion_train.json*.
 
